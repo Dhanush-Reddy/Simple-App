@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 5,
+      "firstName": "Dhanush",
+      "lastName": "Reddy",
+      "age": "22",
+      "gender": "male",
+      "dob": "12/05/2001",
+      "phone": "8142601002"
+    },
+    {
+      "id": 6,
+      "firstName": "K",
+      "lastName": "Dhanush",
+      "age": "14",
+      "gender": "male",
+      "dob": "2143425",
+      "phone": "2134254"
+    },
+    {
+      "id": 7,
+      "firstName": "Dhanush",
+      "lastName": "Reddy",
+      "age": "22",
+      "gender": "male",
+      "dob": "12/05/2003",
+      "phone": "8142601002"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
