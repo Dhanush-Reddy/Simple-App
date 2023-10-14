@@ -1,0 +1,28 @@
+/Users/dhanushreddy/Desktop/Models/bin/Debug/net7.0/Models.deps.json
+/Users/dhanushreddy/Desktop/Models/bin/Debug/net7.0/Models.runtimeconfig.json
+/Users/dhanushreddy/Desktop/Models/bin/Debug/net7.0/Models.dll
+/Users/dhanushreddy/Desktop/Models/bin/Debug/net7.0/Models.pdb
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.csproj.AssemblyReference.cache
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.AssemblyInfoInputs.cache
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.AssemblyInfo.cs
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.csproj.CoreCompileInputs.cache
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.dll
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/refint/Models.dll
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.pdb
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/Models.genruntimeconfig.cache
+/Users/dhanushreddy/Desktop/Models/obj/Debug/net7.0/ref/Models.dll
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/bin/Debug/net7.0/Models.deps.json
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/bin/Debug/net7.0/Models.runtimeconfig.json
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/bin/Debug/net7.0/Models.dll
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/bin/Debug/net7.0/Models.pdb
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.csproj.AssemblyReference.cache
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.AssemblyInfoInputs.cache
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.AssemblyInfo.cs
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.csproj.CoreCompileInputs.cache
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.dll
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/refint/Models.dll
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.pdb
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/Models.genruntimeconfig.cache
+/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/Debug/net7.0/ref/Models.dll
