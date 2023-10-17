@@ -1,0 +1,8 @@
+
+.d-flex{
+    position: absolute;
+    
+    right: 0;
+    width: 120px;
+    transform: translateY(-50%);
+  }

@@ -1,15 +1,10 @@
-<nav class="navbar navbar-light bg-primary">
-  <div class="container-fluid">
-    <h2 style="color: azure;" > Application</h2>
-    <div class="d-flex">
-      <button (click)="addBtn()" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Patient</button>
-    </div>
-  </div>
-</nav>
-<table class="table mt-3">
+<div class="d-flex">
+  <button style="float: left;"  (click)="addBtn()" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Patient</button>
+</div>
+<table class="table mt-5">
   <thead>
     <tr>
-      <th scope="col">Patient Id</th>
+    
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
       <th scope="col">Age</th>
@@ -21,7 +16,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let n of patientData">
-      <td>{{n.id}}</td>
+    
       <td>{{n.firstName}}</td>
       <td>{{n.lastName}}</td>
       <td>{{n.age}}</td>

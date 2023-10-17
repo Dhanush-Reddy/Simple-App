@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dhanushreddy/Desktop/untitled folder 2/Models/Models.csproj": {}
+    "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/Models.csproj": {}
   },
   "projects": {
-    "/Users/dhanushreddy/Desktop/untitled folder 2/Models/Models.csproj": {
+    "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dhanushreddy/Desktop/untitled folder 2/Models/Models.csproj",
+        "projectUniqueName": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/Models.csproj",
         "projectName": "Models",
-        "projectPath": "/Users/dhanushreddy/Desktop/untitled folder 2/Models/Models.csproj",
+        "projectPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/Models.csproj",
         "packagesPath": "/Users/dhanushreddy/.nuget/packages/",
-        "outputPath": "/Users/dhanushreddy/Desktop/untitled folder 2/Models/obj/",
+        "outputPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dhanushreddy/.nuget/NuGet/NuGet.Config"

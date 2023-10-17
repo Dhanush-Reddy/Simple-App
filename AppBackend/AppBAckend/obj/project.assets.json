@@ -3418,11 +3418,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dhanushreddy/Desktop/untitled folder 2/AppBAckend/AppBAckend.csproj",
+      "projectUniqueName": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/AppBAckend/AppBAckend.csproj",
       "projectName": "AppBAckend",
-      "projectPath": "/Users/dhanushreddy/Desktop/untitled folder 2/AppBAckend/AppBAckend.csproj",
+      "projectPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/AppBAckend/AppBAckend.csproj",
       "packagesPath": "/Users/dhanushreddy/.nuget/packages/",
-      "outputPath": "/Users/dhanushreddy/Desktop/untitled folder 2/AppBAckend/obj/",
+      "outputPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/AppBAckend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dhanushreddy/.nuget/NuGet/NuGet.Config"
@@ -3439,8 +3439,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/dhanushreddy/Desktop/untitled folder 2/BiLayer/BiLayer.csproj": {
-              "projectPath": "/Users/dhanushreddy/Desktop/untitled folder 2/BiLayer/BiLayer.csproj"
+            "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/BiLayer/BiLayer.csproj": {
+              "projectPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/BiLayer/BiLayer.csproj"
             }
           }
         }

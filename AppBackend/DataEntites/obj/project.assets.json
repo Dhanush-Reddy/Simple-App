@@ -2915,11 +2915,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dhanushreddy/Desktop/untitled folder 2/DataEntites/DataEntites.csproj",
+      "projectUniqueName": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/DataEntites/DataEntites.csproj",
       "projectName": "DataEntites",
-      "projectPath": "/Users/dhanushreddy/Desktop/untitled folder 2/DataEntites/DataEntites.csproj",
+      "projectPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/DataEntites/DataEntites.csproj",
       "packagesPath": "/Users/dhanushreddy/.nuget/packages/",
-      "outputPath": "/Users/dhanushreddy/Desktop/untitled folder 2/DataEntites/obj/",
+      "outputPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/DataEntites/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dhanushreddy/.nuget/NuGet/NuGet.Config"
@@ -2935,8 +2935,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/dhanushreddy/Desktop/untitled folder 2/Models/Models.csproj": {
-              "projectPath": "/Users/dhanushreddy/Desktop/untitled folder 2/Models/Models.csproj"
+            "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/Models.csproj": {
+              "projectPath": "/Users/dhanushreddy/Desktop/Simple-App/AppBackend/Models/Models.csproj"
             }
           }
         }
