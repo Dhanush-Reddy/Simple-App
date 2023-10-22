@@ -34,6 +34,12 @@ public class PatientEntity : I_PatientEntity
         return pa;
     }
 
+    public Patient GetPatient(int id)
+    {
+        var pa = app.Patients.Where(p => p.PatientId == id).FirstOrDefault();
+        return pa;
+    }
+
     public Patient UpdatePatient(Patient patient)
     {
         app.Patients.Update(patient);

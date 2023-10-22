@@ -8,6 +8,7 @@ namespace DataEntites
         Patient UpdatePatient(Patient patient);
         Patient DeletePatient(int id);
         List<Patient> GetAllPatient();
+        Patient GetPatient(int id);
     }
 }
 

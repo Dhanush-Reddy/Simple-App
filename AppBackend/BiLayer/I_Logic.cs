@@ -8,6 +8,7 @@ namespace BiLayer
 		IEnumerable<PatientModel> getAll();
 		PatientModel UpdatePatient(int id, PatientModel patient);
 		PatientModel deletePatient(int id);
+		PatientModel GetById(int id);
 	}
 }
 

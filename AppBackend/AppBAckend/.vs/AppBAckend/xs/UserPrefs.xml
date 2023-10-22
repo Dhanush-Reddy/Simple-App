@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{FE33D9C7-CB35-4423-9EA0-1CE3DF7A9A33}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.AppBAckend PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../BiLayer/Logic.cs">
     <Files>
       <File FileName="Controllers/AppController.cs" />
-      <File FileName="Program.cs" Line="59" Column="15" />
-      <File FileName="../BiLayer/Logic.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="../BiLayer/Logic.cs" Line="42" Column="1" />
       <File FileName="../Models/PatientModel.cs" />
       <File FileName="../DataEntites/PatientEntity.cs" />
-      <File FileName="../BiLayer/Mapper.cs" />
+      <File FileName="../BiLayer/Mapper.cs" Line="16" Column="37" />
+      <File FileName="../BiLayer/I_Logic.cs" />
+      <File FileName="../DataEntites/I_PatientEntity.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,12 +24,12 @@
             <Node name="AppBAckend" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="BiLayer" expanded="True" />
-            <Node name="DataEntites" expanded="True" />
+            <Node name="BiLayer" expanded="True">
+              <Node name="Logic.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

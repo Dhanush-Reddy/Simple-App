@@ -9,13 +9,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PatientComponent,
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -28,6 +28,12 @@ namespace BiLayer
             return Mapper.map(context.GetAllPatient());
         }
 
+        public PatientModel GetById(int id)
+        {
+            var p = (from pa in context.GetAllPatient() where pa.PatientId == id select pa).FirstOrDefault();
+            return Mapper.map(p);
+        }
+
         public PatientModel UpdatePatient(int id, PatientModel patient)
         {
             var p = (from pa in context.GetAllPatient() where pa.PatientId == id select pa).FirstOrDefault();

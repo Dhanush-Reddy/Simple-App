@@ -1,8 +1,11 @@
 
-<app-header></app-header>
+<app-header (sideNavToogle)="sideNavStatus = $event;"></app-header>
 
 <main>
-    <app-sidenav style="border: solid;"></app-sidenav>
+    <app-sidenav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-sidenav-open':sideNavStatus}" ></app-sidenav>
+    <div class="display-area p-3" [ngClass]="{'display-area-small':sideNavStatus}">
+      
+    </div>
 </main>
 
 <router-outlet></router-outlet>

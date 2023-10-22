@@ -27,20 +27,26 @@ namespace AppBAckend.Controllers
             var pa = logic.getAll();
             return Ok(pa);
         }
+        [HttpGet("GetById/{id}")]
+        public IActionResult Get([FromRoute] int id)
+        {
+            var pa = logic.GetById(id);
+            return Ok(pa);
+        }
         [HttpPost("AddPatient")]
         public IActionResult post([FromBody]PatientModel patient)
         {
             var pa = logic.AddPatient(patient);
             return Ok(pa);
         }
-        [HttpDelete("DeletePatient")]
-        public IActionResult Delete([FromHeader] int id)
+        [HttpDelete("DeletePatient/{id}")]
+        public IActionResult Delete([FromRoute] int id)
         {
             var pa = logic.deletePatient(id);
             return Ok(pa);
         }
-        [HttpPut("UpdatePateint")]
-        public IActionResult Update([FromHeader]int id, [FromBody] PatientModel patient)
+        [HttpPut("UpdatePateint/{id}")]
+        public IActionResult Update([FromRoute]int id, [FromBody] PatientModel patient)
         {
             logic.UpdatePatient(id, patient);
             return Ok(patient);

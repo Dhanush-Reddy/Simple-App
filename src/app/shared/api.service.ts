@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders, } from '@angular/common/http'
 import { env } from 'src/Envorinment/env';
-import { map } from 'rxjs/operators';
+import { map, retry } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { patientModel } from '../patient/patient.model';
 @Injectable({
@@ -12,6 +12,7 @@ export class ApiService {
   baseApiUrl:string = env.baseUrl;
   constructor(private http: HttpClient) { }
 
+  patientID !: any;
 
   // patientRegister(addPatient:Patient):Observable<Patient>
   // {
@@ -32,13 +33,18 @@ export class ApiService {
   updatePatient(data:any,id:number)
   {
     
-    return this.http.put(this.baseApiUrl+"UpdatePatient/"+id,data).pipe(map((res:any)=>{
+    return this.http.put(this.baseApiUrl+'UpdatePateint/' + id,data).pipe(map((res:any)=>{
       return res;
     }))
   }
   deletePatient(id:number){
    
-    return this.http.delete(this.baseApiUrl+"DeletePatient/"+id).pipe(map((res:any)=>{
+    return this.http.delete(this.baseApiUrl+'DeletePatient/'+id).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  getById(id:any){
+    return this.http.get(this.baseApiUrl+'GetById/'+id).pipe(map((res:any)=>{
       return res;
     }))
   }

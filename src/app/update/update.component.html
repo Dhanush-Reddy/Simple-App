@@ -1,0 +1,43 @@
+
+<div class="total" *ngIf="patientData | async; let patient" >
+    <form [formGroup]="formValue">
+       
+        <div class="mb-3">
+            <label  class="form-label">FirstName</label>
+            <input formControlName="lastName"  type="text" placeholder="{{patient.firstName}}" class="form-control" id="exampleInputPassword1">
+          
+        </div>
+
+        <div class="mb-3">
+            <label  class="form-label">LastName</label>
+            <input formControlName="lastName"  type="text" placeholder="{{patient.lastName}}" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Age</label>
+            <input formControlName="age"  type="text" placeholder="{{patient.age}}" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Dob</label>
+            <input formControlName="dob" type="text" placeholder="{{patient.dob}}" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+            <label class="col-sm-4 form-label">Gender</label>
+            <div class="col-sm-8">
+                <input formControlName="gender" type="radio" name="gender" id="GenderMale" value="male" checked> Male
+                <input formControlName="gender" type="radio" name="gender" id="GenderFemale" value="female"> Female
+                <input formControlName="gender" type="radio" name="gender" id="GenderOther" value="others"> Others
+            </div>
+          </div>
+
+
+
+        <div class="mb-3">
+            <label  class="form-label">Phone</label>
+            <input formControlName="phone" type="text" placeholder="{{patient.phone}}" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" (click)="updateBtn()" class="btn btn-primary">Update</button>
+        <button type="button" id="cancle" (click)="goBack()" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </form> 
+</div>

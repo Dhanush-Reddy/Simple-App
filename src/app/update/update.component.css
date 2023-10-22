@@ -1,0 +1,11 @@
+.total{
+    position: relative;
+    margin-left: 150px;
+    margin-top: 2%;
+}
+.btn-secondary{
+    margin-left: 1%;
+}
+input.form-control{
+    width: 500px;
+}

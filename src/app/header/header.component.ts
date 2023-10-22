@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,9 +8,20 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   
+  @Output() sideNavToogle = new EventEmitter<boolean>();
+  menustatus :boolean = false;
+
   constructor(private route:Router){}
   goToPage(pageName:string):void{
     this.route.navigate([`$(pageName)`])
   }
+  ngOnInit():void{
+
+  }
+  SideNavToogle(){
+    this.menustatus = !this.menustatus;
+    this.sideNavToogle.emit(this.menustatus);
+  }
+  
 
 }

@@ -1,9 +1,9 @@
-export class patientModel{
-  id: number =0;
-  firstName:string='';
-  lastName:string='';
-  age:number=0;
-  gender:string='';
-  dob:string='';
-  phone:string='';
+export interface patientModel{
+  patientId: number;
+  firstName:string;
+  lastName:string;
+  age:number;
+  gender:string;
+  dob:string;
+  phone:string;
 }
