@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PatientComponent implements OnInit{
   formValue !: FormGroup;
   patientModelobj !: patientModel;
-  patientData !: any;
+  patientData !: patientModel[];
   showAdd !:boolean;
   currentPatID!: number;
  

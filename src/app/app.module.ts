@@ -10,6 +10,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { UpdateComponent } from './update/update.component';
+import { ApphighletDirective } from './directive/apphighlet.directive';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,11 @@ import { UpdateComponent } from './update/update.component';
     PatientComponent,
     HeaderComponent,
     SidenavComponent,
-    UpdateComponent
+    UpdateComponent,
+    [ApphighletDirective],
+    
+  
+    
   ],
   imports: [
     BrowserModule,

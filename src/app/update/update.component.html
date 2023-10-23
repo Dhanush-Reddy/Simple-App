@@ -4,21 +4,21 @@
        
         <div class="mb-3">
             <label  class="form-label">FirstName</label>
-            <input formControlName="lastName"  type="text" placeholder="{{patient.firstName}}" class="form-control" id="exampleInputPassword1">
+            <input formControlName="firstName"  type="text" [(ngModel)]="patient.firstName" class="form-control" id="exampleInputPassword1">
           
         </div>
 
         <div class="mb-3">
             <label  class="form-label">LastName</label>
-            <input formControlName="lastName"  type="text" placeholder="{{patient.lastName}}" class="form-control" id="exampleInputPassword1">
+            <input formControlName="lastName" [(ngModel)]="patient.lastName"  type="text"  class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3">
             <label  class="form-label">Age</label>
-            <input formControlName="age"  type="text" placeholder="{{patient.age}}" class="form-control" id="exampleInputPassword1">
+            <input formControlName="age"  type="text" [(ngModel)]="patient.age" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="mb-3">
             <label  class="form-label">Dob</label>
-            <input formControlName="dob" type="text" placeholder="{{patient.dob}}" class="form-control" id="exampleInputPassword1">
+            <input formControlName="dob" type="text" [(ngModel)]="patient.dob" class="form-control" id="exampleInputPassword1">
         </div>
 
         <div class="mb-3">
@@ -34,7 +34,7 @@
 
         <div class="mb-3">
             <label  class="form-label">Phone</label>
-            <input formControlName="phone" type="text" placeholder="{{patient.phone}}" class="form-control" id="exampleInputPassword1">
+            <input formControlName="phone" type="text" [(ngModel)]="patient.phone" class="form-control" id="exampleInputPassword1">
         </div>
         
         <button type="submit" (click)="updateBtn()" class="btn btn-primary">Update</button>
