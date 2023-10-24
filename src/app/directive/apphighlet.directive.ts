@@ -12,7 +12,7 @@ export class ApphighletDirective implements OnInit{
 
   
 
-  constructor(private ele:ElementRef,private render:Renderer2) { }
+  constructor(private ele:ElementRef) { }
   ngOnInit() {
     if(this._age >= 20){
     //  this.render.setStyle(this.ele.nativeElement,'background-color','red')

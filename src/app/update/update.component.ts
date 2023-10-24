@@ -29,6 +29,7 @@ export class UpdateComponent {
       this.currentPatID = data['id']      
     })
 
+    
     this.patientData = this.api.getById(this.currentPatID);
     this.formValue = this.formbuilder.group({
       firstName :[''],
@@ -40,11 +41,12 @@ export class UpdateComponent {
     })
   }
 
-  // getbyId(id:any){
-  //   this.api.getById(id).subscribe(res => {
-  //     this.patientData = res
-  //   });
-  // }
+  getbyId(id:any){
+    this.api.getById(id).subscribe(res => {
+      this.patientData = res
+      console.log(res);
+    });
+  }
 
   goBack():void{
     this.location.back();

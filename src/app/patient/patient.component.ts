@@ -3,38 +3,61 @@ import { FormBuilder,FormGroup } from '@angular/forms';
 import { patientModel } from './patient.model';
 import { ApiService } from '../shared/api.service';
 import { Route, Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+// import { constructor } from 'typescript';
+// import { DeleteComponent } from '../delete/delete.component';
 @Component({
   selector: 'app-patient',
   templateUrl: './patient.component.html',
-  styleUrls: ['./patient.component.css']
+  styleUrls: ['./patient.component.css'],
+  providers:[ApiService]
 })
+
+
 export class PatientComponent implements OnInit{
   formValue !: FormGroup;
   patientModelobj !: patientModel;
   patientData !: patientModel[];
   showAdd !:boolean;
   currentPatID!: number;
- 
   
+  firstName ='';
+  lastName = '';
+  id = 0;
+  
+  showDeletePopUP:boolean = false;
   
   showUpdate !:boolean;
 
-
-
+  
+ 
+  
   constructor(private formbuilder: FormBuilder,
     private api:ApiService,
     private act:ActivatedRoute,
-    private route:Router
+    private route:Router,
+    private location:Location,
+    
     ) {
   }
+  
 
   gotoUpdate(id: number):void{
     //this.route.navigate([`${pageName}`])
     this.route.navigate(['update', id]);
   }
+  
+  goback(){
+    this.location.back();
+  }
+  
+
+  gotoDelete(id:any):void{
     
-  ngOnInit(): void {
+    this.showDeletePopUP = true
+  }
+  ngOnInit(){
 
     
     
@@ -50,8 +73,16 @@ export class PatientComponent implements OnInit{
 
     })
     this.getAll();
+
+   
+    
   }
 
+  trasfer(firstName:any,lastName:any,id:any){
+    this.firstName = firstName,
+    this.lastName = lastName,
+    this.id = id
+  }
   addBtn(){
     this.formValue.reset();
     this.showAdd = true;
@@ -86,12 +117,9 @@ export class PatientComponent implements OnInit{
   getAll(){
     this.api.getPatient().subscribe(res=>{
       this.patientData = res;
-      })
+    })
   }
   delete(id:number){
-    
-    
-
     this.api.deletePatient(id).subscribe(res=>{
       alert("Deleted")
       this.getAll();
@@ -114,11 +142,7 @@ export class PatientComponent implements OnInit{
 
 
   }
-  SaveId(n:any){
-    let data = {Id:n.patientId};
-
-    localStorage.setItem('Session' , JSON.stringify(data))
-  }
+ 
   updateBtn(){
     this.patientModelobj = {
       patientId : this.currentPatID,

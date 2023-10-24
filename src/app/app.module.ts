@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { UpdateComponent } from './update/update.component';
 import { ApphighletDirective } from './directive/apphighlet.directive';
+import { DeleteComponent } from './delete/delete.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ApphighletDirective } from './directive/apphighlet.directive';
     SidenavComponent,
     UpdateComponent,
     [ApphighletDirective],
+    DeleteComponent
     
   
     

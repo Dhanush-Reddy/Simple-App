@@ -20,7 +20,7 @@
   </tr>
 </thead>
 <tbody *ngFor="let n of patientData">
-  <tr>
+  <tr  >
     <td appApphighlet [age] = [n.age]>{{n.firstName}}</td>
     <td appApphighlet [age] = [n.age]>{{n.lastName}}</td>
     <td appApphighlet [age] = [n.age]>{{n.age}}</td>
@@ -29,14 +29,16 @@
     <td appApphighlet [age] = [n.age]>{{n.phone}}</td>
 
     <td>
-      <button (click)="update(n)"  (click)="SaveId(n)"  type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
-      <button (click)="delete(n.patientId)" class="btn btn-danger mx-3">Delete</button>
+      <button (click)="update(n)"  type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+     
+      <button href="Delete/" (click)="trasfer(n.firstName,n.lastName,n.patientId)" (click)="gotoDelete(n.patientId)" style="margin-left: 2%;margin-right: 2%;" class="btn btn-danger mx-3" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Delete</button>
       <button href="Update/" (click)="gotoUpdate(n.patientId)" class="btn btn-dark">Edit-2</button>
     </td>
   </tr>
 </tbody>
 </table>
 
+<app-delete (event)="delete(id)" [firstName] = "firstName" [lastName]="lastName" [id]="id" *ngIf="this.showDeletePopUP == true"></app-delete>
 
 
 
@@ -69,7 +71,7 @@
         <div class="mb-3">
           <label class="col-sm-4 form-label">Gender</label>
           <div class="col-sm-8">
-              <input formControlName="gender" type="radio" name="gender" id="GenderMale" value="male" checked> Male
+              <input formControlName="gender"  type="radio" name="gender" id="GenderMale" value="male" checked> Male
               <input formControlName="gender" type="radio" name="gender" id="GenderFemale" value="female"> Female
               <input formControlName="gender" type="radio" name="gender" id="GenderOther" value="others"> Others
           </div>
@@ -100,5 +102,6 @@
 </div>
 
 </div>
+
 
 

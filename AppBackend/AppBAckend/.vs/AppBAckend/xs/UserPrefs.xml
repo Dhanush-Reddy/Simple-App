@@ -6,26 +6,26 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.AppBAckend PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../BiLayer/Logic.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../BiLayer/Mapper.cs">
     <Files>
       <File FileName="Controllers/AppController.cs" />
       <File FileName="Program.cs" />
-      <File FileName="../BiLayer/Logic.cs" Line="42" Column="1" />
+      <File FileName="../BiLayer/Logic.cs" />
       <File FileName="../Models/PatientModel.cs" />
       <File FileName="../DataEntites/PatientEntity.cs" />
-      <File FileName="../BiLayer/Mapper.cs" Line="16" Column="37" />
+      <File FileName="../BiLayer/Mapper.cs" Line="10" Column="1" />
       <File FileName="../BiLayer/I_Logic.cs" />
       <File FileName="../DataEntites/I_PatientEntity.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="AppBAckend" expanded="True">
-            <Node name="AppBAckend" expanded="True">
+          <Node name="AppBAckend">
+            <Node name="AppBAckend">
               <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="BiLayer" expanded="True">
-              <Node name="Logic.cs" selected="True" />
+              <Node name="Mapper.cs" selected="True" />
             </Node>
           </Node>
         </State>

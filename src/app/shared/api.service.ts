@@ -19,6 +19,11 @@ export class ApiService {
   //   return this.http.post<Patient>(this.baseApiUrl+'/Patient/Register_Patient',addPatient);
   // }
 
+  allData : any[]= [];
+  
+
+
+
   postPatient(data:any){
     return this.http.post<any>(this.baseApiUrl+'AddPatient',data).pipe(map((res:any)=>{
       return res;
